@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive websites respond to the size of the browser at any given point. No matter what the browser width may be, the site adjusts its layout (and perhaps functionality) in a way that is optimized to the screen. Adaptive websites adapt to the width of the browser at specific points. In other words, the website is only concerned about the browser being a specific width, at which point it adapts the layout.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means designing the web page layout at width of a mobile screen first. Then adjust content to fit bigger screens like tablet and desktop width.  This in CSS uses @media (min-width: ***)
+Desktop first means designing the web page layout at width of a desktop screen first. Then adjust content to fit smaller screens like tablet and mobile phone width.  This in CSS uses @media (max-width: ***)
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+62.5% is a magic number since majority of browsers default font-size is 16px.  62.5% of 16px is 10px.  This means now 1 rem unit equals 10px which is easy to multiply when using it. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing means using another program like LESS to processes its input data to produce output that is used as input to another program like CSS. Preprocessor like LESS has a lot of powerful tools and makes code cleaner, more organized and easier to adjust.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept parametric mixins.  This unlocks the possibility of easy adjusting styling in future.
+The concept gives me the most trouble is nesting media queries.  I thought it was less organized to break down and nest media queries into each selector.  Then I see the value of it now. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
